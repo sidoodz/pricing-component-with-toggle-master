@@ -1,0 +1,115 @@
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .card{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 40px;
+    text-align: center;
+    background-color: #fffefe;
+    margin: 10px 0px;
+    border-radius: 12px;
+    align-self: center;
+  }
+  .card:nth-child(2) {
+    background: linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    margin:  16px 0 16px 0;
+    padding-top: 56px;
+    padding: 80px 40px;
+  
+  }
+  .card h1 {
+    font-size: 50PX;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .card small {
+    font-size: 40px;
+    margin-right: 5px;
+  }
+  .card p {
+    padding: 25px 0;
+    border-top: 1px solid hsl(240, 78%, 98%);
+    color: hsl(232deg 4% 40%);
+  }
+  .card:nth-child(2) p {
+    color: white;
+  }
+  .card p:last-of-type {
+    border-bottom: 1px solid hsl(240, 78%, 98%);
+    margin-bottom: 15px;
+  
+  }
+  .card button {
+    display: block;
+    background: linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    padding: 15px 0;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+  .card button:hover {
+  background: transparent;
+  color: hsl(237, 63%, 64%);
+  border-color: hsl(237, 63%, 64%);
+  }
+  .card:nth-child(2) button {
+  background: #FFF;
+  color: hsl(237, 63%, 64%);
+  }
+  .card:nth-child(2) button:hover {
+    color: #FFF;
+    border-color: #FFF;
+    background: transparent;
+  }
+  
+  @media (max-width: 1000px) {
+    .card-container {
+      flex-direction: column;
+    }
+    .card {
+      width: 53%;
+    }
+  }
+  @media (max-width: 600px) {
+    .card-container {
+      margin-top: 24px;
+    }
+    .card {
+      width: 73%;
+      margin: 20px 0 20px 0;
+      padding: 16px;
+    }
+    .card:nth-child(2) {
+      padding-top: 16px;
+    }
+    .card h1 {
+      font-size:  48px;
+      padding:  16px;
+    }
+    .card h3 , .card p{
+      padding: 16px;
+    }
+    .card:nth-child(2) button{
+      margin: 32px 0 16px 0;
+    }
+  }
